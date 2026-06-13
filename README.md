@@ -383,18 +383,6 @@ Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente.
 
 O projeto apresenta uma abordagem própria para conscientização ambiental por meio de simulação interativa, combinando educação, tecnologia e sustentabilidade em uma única experiência digital.
 
----
-
-## Melhorias Futuras
-
-* Integração com dados climáticos em tempo real.
-* Sistema de ranking para usuários.
-* Recursos de Progressive Web App (PWA).
-* Novos cenários de simulação.
-* Expansão do conteúdo educacional.
-
----
-
 ## Autor
 
 ### Lucas Marques Cordeiro
