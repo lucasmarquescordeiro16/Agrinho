@@ -501,29 +501,47 @@
   .sim-layout { grid-template-columns: 260px 1fr 260px; gap: 1rem; padding: 1rem; }
 }
 @media (max-width: 900px) {
+  .simulator-page {
+    height: auto;
+    overflow-y: auto;
+  }
   .sim-layout { 
     display: flex; 
     flex-direction: column; 
-    overflow-y: auto; 
+    overflow-y: visible; 
     overflow-x: hidden;
+    height: auto;
   }
   .sim-panel-left, .sim-panel-right { 
     border: 1px solid var(--border-color); 
     min-height: fit-content; 
     width: 100%;
+    order: 2; /* Move panels below the center map on mobile */
   }
   .sim-center { 
-    min-height: 400px; 
+    min-height: 450px; 
     width: 100%;
+    order: 1; /* Keep map at top */
+  }
+  .sim-panel-right {
+    order: 3;
   }
 }
 @media (max-width: 600px) {
-  .improvement-card { padding: 1rem; }
+  .improvement-card { padding: 0.8rem; }
   .sim-panel-left, .sim-panel-right { padding: 1rem; }
-  .sim-layout { padding: 0.5rem; }
+  .sim-layout { padding: 0.5rem; gap: 1rem; }
   .panel-title { font-size: 0.9rem; }
   .budget-display { font-size: 1.2rem; }
   .install-btn { padding: 0.6rem 1rem; font-size: 0.9rem; }
+  .sim-center { min-height: 350px; }
+  .metric-item { padding: 0.8rem; }
+  .metric-value { font-size: 1.2rem; }
+}
+@media (max-width: 480px) {
+  .sim-header h1 { font-size: 1.5rem; }
+  .sim-header p { font-size: 0.75rem; }
+  .btn-sim-action { min-width: 100%; }
 }
 
 [data-theme="light"] .simulator-page {
