@@ -1732,7 +1732,6 @@ html[data-reading="sepia"] body::after {
 }
 
 
-/* ALTO CONTRASTE - TEMA ESCURO (Padrão) */
 [data-theme="dark"][data-a11y="high-contrast"],
 [data-a11y="high-contrast"] {
   --bg-primary: #000000 !important;
@@ -1764,7 +1763,6 @@ html[data-reading="sepia"] body::after {
   --shadow-green: none !important;
 }
 
-/* ALTO CONTRASTE - TEMA CLARO */
 [data-theme="light"][data-a11y="high-contrast"] {
   --bg-primary: #ffffff !important;
   --bg-secondary: #ffffff !important;
@@ -1790,7 +1788,6 @@ html[data-reading="sepia"] body::after {
   --grad-subtle: #ffffff !important;
 }
 
-/* Regras Globais de Alto Contraste */
 [data-a11y="high-contrast"] * {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
@@ -1803,7 +1800,6 @@ html[data-reading="sepia"] body::after {
   outline-offset: 4px !important;
 }
 
-/* Bordas mais espessas para cards e painéis */
 [data-a11y="high-contrast"] .info-card,
 [data-a11y="high-contrast"] .sim-edu-feature,
 [data-a11y="high-contrast"] .sim-edu-wrapper,
@@ -1823,7 +1819,6 @@ html[data-reading="sepia"] body::after {
   background: var(--bg-primary) !important;
 }
 
-/* Correção de números e ícones em destaque */
 [data-a11y="high-contrast"] .step-number,
 [data-a11y="high-contrast"] .solution-num,
 [data-a11y="high-contrast"] .dash-icon,
@@ -1835,7 +1830,6 @@ html[data-reading="sepia"] body::after {
   border: 3px solid var(--border-color) !important;
 }
 
-/* Correção de botões baseada no tema ativo */
 [data-a11y="high-contrast"] button,
 [data-a11y="high-contrast"] .btn-primary,
 [data-a11y="high-contrast"] .btn-nav-cta,

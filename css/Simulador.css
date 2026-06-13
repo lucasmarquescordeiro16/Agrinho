@@ -516,12 +516,12 @@
     border: 1px solid var(--border-color); 
     min-height: fit-content; 
     width: 100%;
-    order: 2; /* Move panels below the center map on mobile */
+    order: 2;
   }
   .sim-center { 
     min-height: 450px; 
     width: 100%;
-    order: 1; /* Keep map at top */
+    order: 1;
   }
   .sim-panel-right {
     order: 3;
